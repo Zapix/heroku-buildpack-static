@@ -8,6 +8,10 @@ cache_dir=$2
 env_dir=$3
 bp_dir=$(dirname $(dirname $0))
 
+node_version=5.11.1
+npm_version=3.8.6
+
+
 fetch_nginx_tarball() {
     local version="1.9.7"
     local tarball_file="nginx-$version.tgz"
