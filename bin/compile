@@ -34,4 +34,8 @@ cp $bp_dir/scripts/config/templates/mime.types $build_dir/config
 
 mkdir -p $build_dir/logs
 
+ls
+node -v 
+npm -v
+
 exit 0
