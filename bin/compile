@@ -34,8 +34,8 @@ cp $bp_dir/scripts/config/templates/mime.types $build_dir/config
 
 mkdir -p $build_dir/logs
 
-source ${build_pack_dir}/lib/common.sh
-source ${build_pack_dir}/lib/build.sh
+source ${bp_dir}/lib/common.sh
+source ${bp_dir}/lib/build.sh
 
 cleanup_cache
 download_node
