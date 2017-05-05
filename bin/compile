@@ -39,6 +39,8 @@ ls $bp_dir
 source $bp_dir/lib/common.sh
 source $bp_dir/lib/build.sh
 
+echo "Setup" $node_version
+
 cleanup_cache
 download_node
 install_node
