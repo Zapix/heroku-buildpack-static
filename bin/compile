@@ -49,9 +49,10 @@ cleanup_cache
 download_node
 install_node
 install_npm
+install_yarn
 
 ls
 node -v 
 npm -v
 
-exit 0
+exit 1
