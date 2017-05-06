@@ -26,7 +26,7 @@ download_node() {
   curl -s ${node_url} -o ${cached_node}
 }
 
-cleanup_old_node() {
+cleanup_old_node) {
   local old_node_dir=$cache_dir/node-$old_node-linux-x64.tar.gz
 
   # Note that $old_node will have a format of "v5.5.0" while $node_version
@@ -69,7 +69,7 @@ install_npm() {
     info "Using default npm version"
   else
     info "Downloading and installing npm $npm_version (replacing version `npm --version`)..."
-    cd $build_dir
+    cd $bp_dir
     npm install --unsafe-perm --quiet -g npm@$npm_version 2>&1 >/dev/null | indent
   fi
 }

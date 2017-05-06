@@ -7,6 +7,7 @@ build_dir=$1
 cache_dir=$2
 env_dir=$3
 bp_dir=$(dirname $(dirname $0))
+heroku_dir=$1/.heroku
 
 node_version=5.11.1
 npm_version=3.8.6
@@ -38,8 +39,6 @@ mkdir -p $build_dir/config
 cp $bp_dir/scripts/config/templates/mime.types $build_dir/config
 
 mkdir -p $build_dir/logs
-
-ls $bp_dir
 
 source $bp_dir/lib/common.sh
 source $bp_dir/lib/build.sh
