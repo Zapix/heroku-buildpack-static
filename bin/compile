@@ -7,7 +7,7 @@ build_dir=$1
 cache_dir=$2
 env_dir=$3
 bp_dir=$(dirname $(dirname $0))
-heroku_dir=$1/.heroku
+heroku_dir="${build_dir}/.heroku"
 
 node_version=5.11.1
 npm_version=3.8.6

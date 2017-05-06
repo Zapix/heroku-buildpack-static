@@ -69,7 +69,7 @@ install_npm() {
     info "Using default npm version"
   else
     info "Downloading and installing npm $npm_version (replacing version `npm --version`)..."
-    cd $bp_dir
+    cd $build_dir
     npm install --unsafe-perm --quiet -g npm@$npm_version 2>&1 >/dev/null | indent
   fi
 }
