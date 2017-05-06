@@ -53,10 +53,7 @@ install_yarn "$heroku_dir/yarn"
 
 cd $build_dir
 yarn install 
-yarn run deploy-prod
 
-ls
-node -v 
-npm -v
+echo "Project has been compiled"
 
-exit 1
+exit 0
