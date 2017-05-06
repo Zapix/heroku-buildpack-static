@@ -22,12 +22,8 @@ load_previous_npm_node_versions() {
 download_node() {
   local node_url="http://s3pository.heroku.com/node/v$node_version/node-v$node_version-linux-x64.tar.gz"
 
-  if [ ! -f ${cached_node} ]; then
-    info "Downloading node ${node_version}..."
-    curl -s ${node_url} -o ${cached_node}
-  else
-    info "Using cached node ${node_version}..."
-  fi
+  info "Downloading node ${node_version}..."
+  curl -s ${node_url} -o ${cached_node}
 }
 
 cleanup_old_node() {
