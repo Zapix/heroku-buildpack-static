@@ -51,6 +51,10 @@ install_node
 install_npm
 install_yarn "$heroku_dir/yarn"
 
+cd $build_dir
+yarn install 
+yarn run deploy-prod
+
 ls
 node -v 
 npm -v
