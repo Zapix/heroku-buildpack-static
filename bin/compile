@@ -10,7 +10,7 @@ bp_dir=$(dirname $(dirname $0))
 
 node_version=5.11.1
 npm_version=3.8.6
-cache_node="/tmp/node.tar.gz"
+cached_node="/tmp/node.tar.gz"
 
 
 fetch_nginx_tarball() {
