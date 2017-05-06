@@ -26,7 +26,7 @@ download_node() {
   curl -s ${node_url} -o ${cached_node}
 }
 
-cleanup_old_node) {
+cleanup_old_node() {
   local old_node_dir=$cache_dir/node-$old_node-linux-x64.tar.gz
 
   # Note that $old_node will have a format of "v5.5.0" while $node_version
